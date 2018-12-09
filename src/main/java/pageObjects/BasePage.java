@@ -29,7 +29,7 @@ public class BasePage extends DriverFactory {
 		jsExecutor = ((JavascriptExecutor) driver);
 	}
 	
-	//git test
+	//git test 2
 
 	/**********************************************************************************
 	 **CLICK METHODS

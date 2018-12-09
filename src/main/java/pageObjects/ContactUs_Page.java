@@ -15,7 +15,7 @@ public class ContactUs_Page extends BasePage {
 	public ContactUs_Page() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
-		//test git
+		//test git 2
 	}
 
 }

@@ -62,6 +62,7 @@ public class DriverFactory  {
 			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			contactUsPage = PageFactory.initElements(driver, ContactUs_Page.class);
 			productsPage = PageFactory.initElements(driver, Products_Page.class);
+			//git test
 			
 		}
 		return driver;

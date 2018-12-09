@@ -28,6 +28,8 @@ public class BasePage extends DriverFactory {
 		this.wait = new WebDriverWait(driver, 15);
 		jsExecutor = ((JavascriptExecutor) driver);
 	}
+	
+	//git test
 
 	/**********************************************************************************
 	 **CLICK METHODS

@@ -1,7 +1,6 @@
 package pageObjects;
 
 import java.io.IOException;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -13,8 +12,18 @@ public class Products_Page extends BasePage {
 
 	public Products_Page() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
-		//git test 2
+	}
+	
+	public Products_Page clickOnProceedButton_Popup() throws IOException, InterruptedException {
+		waitAndClickElement(button_Proceed_Popup);
+		return new Products_Page();
 	}
 
+	public String printSpecialOffersVoucherCode() throws InterruptedException {
+		WaitUntilWebElementIsVisible(voucherCode);
+		String voucherCodeValue = voucherCode.getText();
+		System.out.println("Voucher Code: " + voucherCode.getText());
+		return voucherCodeValue;
+	}
 }
+

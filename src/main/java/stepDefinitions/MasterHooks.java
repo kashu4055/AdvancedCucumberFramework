@@ -16,7 +16,8 @@ public class MasterHooks extends DriverFactory {
 	public void TearDown(){
 		if (driver != null){ 							//driver is in use
 			driver.manage().deleteAllCookies();
-			driver.quit();							    //closes browser window when steps have ended
+			driver.quit();				//closes browser window when steps have ended
+			driver = null;
 		}
 }
 
